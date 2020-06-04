@@ -60,22 +60,23 @@ function counter2() {
 /* Task 2: inning() 
 
 Write a function called `inning` that generates a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
-
+console.log('inning function')
+console.log('')
 function inning(min, max) {
   let score = Math.floor(Math.random() * (max - min));
   return score;
 }
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-// console.log(inning(0,3));
-
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log(inning(0,3));
+console.log('-----------------------------------')
 /* Task 3: finalScore()
 
 Write a higher order function called `finalScore` that accepts the callback function `inning` (from above) and a number of innings and and returns the final score of the game in the form of an object.
@@ -89,7 +90,8 @@ finalScore(inning, 9) might return:
 }
 
 */
-
+console.log('finalScore function')
+console.log('')
 function finalScore(callback, innings) {
   let home = 0;
   let away = 0;
@@ -100,8 +102,8 @@ function finalScore(callback, innings) {
   }
   return { Home: home, Away: away };
 }
-// console.log(finalScore(inning, 9));
-
+console.log(finalScore(inning, 9));
+console.log('-----------------------------------')
 
 /* Task 4: 
 
@@ -123,7 +125,8 @@ and returns the score at each pont in the game, like so:
 9th inning: 6 - 10
 
 Final Score: 6 - 10 */
-
+console.log('scoreboard function')
+console.log('')
 function scoreboard(callback, innings) {
    let home = 0;
   let away = 0;
