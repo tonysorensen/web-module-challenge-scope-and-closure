@@ -28,9 +28,15 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ * counter1 has the variable "count" in block level scope, it is contained within the function. counter2 has the variable in the global scope.
+ * 
  * 2. Which of the two uses a closure? How can you tell?
  * 
+ * counter1 uses a closure, the function can access all the variables from within itself. 
+ * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
+ * 
+ * counter1 would be preferable if the variable "count" was only going to be used in this single function. counter2 would be preferable if the variable was needed elesewhere in the code.
  *
 */
 
