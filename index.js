@@ -132,19 +132,18 @@ function scoreboard(callback, innings) {
     home += callback(0, 3);
     away += callback(0, 3);
     if (i === 0){
-      console.log(`1st inning ${home}-${away}`)
+      console.log(`1st inning ${home} - ${away}`)
     }
     else if (i === 1){
-      console.log(`2nd inning ${home}-${away}`)
+      console.log(`2nd inning ${home} - ${away}`)
     }
     else if (i === 2){
-      console.log(`3rd inning ${home}-${away}`)
+      console.log(`3rd inning ${home} - ${away}`)
     }
     else{
-    console.log(`${i+1}th inning ${home}-${away}`)
+    console.log(`${i+1}th inning ${home} - ${away}`)
     }
   }
-  
-  return { Home: home, Away: away };
+  console.log(`Final Score: ${home} -${away}`) 
 }
-console.log(scoreboard(inning,9));
+scoreboard(inning,9)
