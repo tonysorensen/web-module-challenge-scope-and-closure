@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+Closure is a function, or block of code, and the data it has access to, within itself and in the global scope in order to execute.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +66,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+Closure is in the variables dansRoll and zoesRoll. Without them the function would return undefined because it wouldn't know what ${name was pointing to.}
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The name will remain constant but the result of the roll can change.
+
 c. What is the lexical scope of `newRoll`? 
+
+newRoll is in block level scope, contained within the function, also called function scope.
 
 ### Task 3 - Stretch Goals
 
